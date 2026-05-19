@@ -1,0 +1,22 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.example:Alisam_Codes >----------------------
+[INFO] Building Alisam_Codes 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ Alisam_Codes ---
+[INFO] Deleting C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.727 s
+[INFO] Finished at: 2026-03-11T18:58:38+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-clean-plugin:3.4.1:clean (default-clean) on project Alisam_Codes: Failed to clean project: Failed to delete C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes\static\css -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

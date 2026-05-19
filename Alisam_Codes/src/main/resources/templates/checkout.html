@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{fragments/layout}">
+<head>
+    <title>Checkout - Alisam Cart (Razorpay & Shiprocket)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body class="bg-gray-50 pb-16">
+    <main layout:fragment="content" class="max-w-4xl mx-auto px-4 py-8">
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-black text-gray-900">Secure Checkout</h1>
+            <p class="text-gray-500 mt-2">Alisam Cart Direct - Singanallur</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Order Summary -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-3 mb-4">Order Summary</h2>
+                
+                <div class="flex flex-col gap-4 mb-6">
+                    <div th:each="item : ${cart}" class="flex gap-4 border-b border-gray-100 pb-4">
+                        <div class="w-16 h-16 bg-gray-100 rounded flex-shrink-0 flex items-center justify-center">
+                            <i class="fas fa-box text-gray-400 text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-sm text-gray-900" th:text="${item.product.name}">Product</h3>
+                            <p class="text-[11px] text-gray-500 mt-0.5">
+                                <span th:if="${item.size != null}" th:text="'Size: ' + ${item.size} + ' | '"></span>
+                                <span th:if="${item.paper != null}" th:text="'Material: ' + ${item.paper} + ' | '"></span>
+                                <span th:if="${item.color != null}" th:text="'Color: ' + ${item.color}"></span>
+                            </p>
+                            <p class="text-[11px] text-gray-500"><span th:if="${item.text != null and !item.text.isEmpty()}" th:text="'Text: ' + ${item.text}"></span></p>
+                            <p class="text-xs font-medium text-gray-800 mt-1" th:text="'Qty: ' + ${item.quantity}">Qty: 1</p>
+                        </div>
+                        <div class="font-bold text-gray-900" th:text="'₹' + (${item.product.price} * ${item.quantity})">₹399</div>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex justify-between font-bold text-lg">
+                    <span>Shipping + Taxes</span>
+                    <span class="text-gray-500">₹29.00</span>
+                </div>
+                <div class="pt-2 mt-2 border-t border-gray-200 flex justify-between font-bold text-xl">
+                    <span>Total Amount</span>
+                    <span class="text-green-700" th:text="'₹' + ${amount}">₹0.00</span>
+                </div>
+            </div>
+
+            <!-- Shipping & Payment -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 h-fit">
+                <h2 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-3 mb-4">Delivery & Payment</h2>
+                
+                <div class="mb-6 pb-6 border-b border-gray-100">
+                    <h3 class="text-sm font-bold text-gray-700 mb-2 flex items-center gap-2">
+                        <div class="w-6 h-6 rounded bg-[#ebf4fa] flex items-center justify-center text-[#1855a8]"><i class="fas fa-truck-fast"></i></div> 
+                        Shiprocket Integration
+                    </h3>
+                    <p class="text-xs text-gray-500 mb-3">Order will be printed and shipped from our primary facility.</p>
+                    <div class="bg-gray-50 p-3 rounded border border-gray-200 text-xs text-gray-800">
+                        <div class="font-bold mb-1">Alisam Cart Pickup Location:</div>
+                        Singanallur, Coimbatore.<br>
+                        <span class="font-bold">Pincode:</span> <span class="bg-blue-100 text-blue-800 font-mono px-1 rounded inline-block mt-1" th:text="${pickupPincode}">641014</span>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <h3 class="text-sm font-bold text-gray-700 mb-3 flex items-center gap-2">
+                        <div class="w-6 h-6 rounded bg-[#eaf4ff] flex items-center justify-center text-[#3395ff]"><i class="fas fa-credit-card"></i></div>
+                        Razorpay (India)
+                    </h3>
+                    
+                    <button id="rzp-button1" class="w-full bg-[#3395ff] hover:bg-[#2084ea] text-white font-bold py-3.5 rounded-lg shadow-sm transition-colors flex justify-center items-center gap-2 cursor-pointer">
+                        Pay ₹<span th:text="${amount}">0</span> with Razorpay
+                    </button>
+                    <div class="text-center mt-3 text-[10px] text-gray-400">
+                        <i class="fas fa-lock"></i> Secured by Razorpay Verification
+                    </div>
+                    
+                    <form action="/cart/verify-payment" method="post" id="checkoutForm" class="hidden">
+                        <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id">
+                        <input type="hidden" name="razorpay_order_id" id="razorpay_order_id">
+                        <input type="hidden" name="razorpay_signature" id="razorpay_signature">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script th:inline="javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                var rzpKey = /*[[${razorpayKey}]]*/ 'rzp_test_123456789VJ'; 
+                var rzpOrderId = /*[[${razorpayOrderId}]]*/ 'order_fake'; 
+                var amountInPaise = /*[[${amount * 100}]]*/ 10000;
+                var customerName = /*[[${user.name}]]*/ 'Customer Name';
+                var customerEmail = /*[[${user.email}]]*/ 'customer@example.com';
+
+                var options = {
+                    "key": rzpKey,
+                    "amount": amountInPaise, 
+                    "currency": "INR",
+                    "name": "Alisam Prints",
+                    "description": "Custom 3D Print Order",
+                    "order_id": rzpOrderId,
+                    "handler": function (response){
+                        // Payment Success, send signature to server for verification
+                        document.getElementById('razorpay_payment_id').value = response.razorpay_payment_id;
+                        document.getElementById('razorpay_order_id').value = response.razorpay_order_id;
+                        document.getElementById('razorpay_signature').value = response.razorpay_signature;
+                        
+                        // Show saving state or disable button
+                        var btn = document.getElementById('rzp-button1');
+                        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Verifying...';
+                        btn.disabled = true;
+
+                        // Submit verifying form via fetch or direct submit
+                        var form = document.getElementById('checkoutForm');
+                        const formData = new FormData(form);
+                        
+                        fetch('/cart/verify-payment', {
+                            method: 'POST',
+                            body: formData
+                        }).then(res => {
+                            if(res.ok) {
+                                window.location.href = "/products?success=true&message=Order+Placed+Successfully";
+                            } else {
+                                alert("Payment verification failed! Please contact support.");
+                                btn.innerHTML = 'Verification Failed';
+                            }
+                        }).catch(err => {
+                            alert("Server error during verification. " + err);
+                            btn.innerHTML = 'Verifying Error';
+                        });
+                    },
+                    "prefill": {
+                        "name": customerName,
+                        "email": customerEmail,
+                        "contact": ""
+                    },
+                    "notes": {
+                        "address": "Shiprocket Pickup: Singanallur"
+                    },
+                    "theme": {
+                        "color": "#3395ff"
+                    }
+                };
+
+                var rzp1 = new Razorpay(options);
+
+                document.getElementById('rzp-button1').onclick = function(e){
+                    rzp1.open();
+                    e.preventDefault();
+                }
+            });
+        </script>
+    </main>
+</body>
+</html>

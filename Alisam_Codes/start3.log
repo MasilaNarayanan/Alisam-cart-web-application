@@ -1,0 +1,1565 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.example:Alisam_Codes >----------------------
+[INFO] Building Alisam_Codes 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.12-SNAPSHOT:run (default-cli) > test-compile @ Alisam_Codes >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Alisam_Codes ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 10 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ Alisam_Codes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Alisam_Codes ---
+[INFO] skip non existing resourceDirectory C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ Alisam_Codes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.12-SNAPSHOT:run (default-cli) < test-compile @ Alisam_Codes <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.12-SNAPSHOT:run (default-cli) @ Alisam_Codes ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:12:38.283+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:12:38.287+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:12:38.442+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-11T19:12:38.443+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-11T19:12:42.783+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:12:42.982+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:12:44.160+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:12:44.180+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:12:44.180+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:12:44.269+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:12:44.271+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5826 ms
+2026-03-11T19:12:44.430+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-11T19:12:45.493+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57fbba
+2026-03-11T19:12:45.493+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-11T19:12:45.627+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:12:45.710+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.44.Final
+2026-03-11T19:12:45.777+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:12:46.491+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:12:46.645+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:12:46.677+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:12:48.134+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table categories (id bigint not null auto_increment, description varchar(255), image_url varchar(255), name varchar(255) not null, primary key (id)) engine=InnoDB
+Hibernate: create table order_items (id bigint not null auto_increment, custom_image_url varchar(255), custom_text varchar(500), price decimal(38,2) not null, quantity integer not null, order_id bigint not null, product_id bigint not null, primary key (id)) engine=InnoDB
+Hibernate: create table orders (id bigint not null auto_increment, created_at datetime(6), status varchar(255), total_amount decimal(38,2) not null, user_id bigint not null, primary key (id)) engine=InnoDB
+Hibernate: create table products (id bigint not null auto_increment, description varchar(1000), image_url varchar(255), is_customizable bit, name varchar(255) not null, price decimal(38,2) not null, category_id bigint, primary key (id)) engine=InnoDB
+Hibernate: create table users (id bigint not null auto_increment, email varchar(255) not null, name varchar(255), password varchar(255), role varchar(255), primary key (id)) engine=InnoDB
+Hibernate: alter table categories drop index UKt8o6pivur7nn124jehx7cygw5
+Hibernate: alter table categories add constraint UKt8o6pivur7nn124jehx7cygw5 unique (name)
+Hibernate: alter table users drop index UK6dotkott2kjsp8vw4d0m25fb7
+Hibernate: alter table users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: alter table order_items add constraint FKbioxgbv59vetrxe0ejfubep1w foreign key (order_id) references orders (id)
+Hibernate: alter table order_items add constraint FKocimc7dtr037rh4ls4l95nlfi foreign key (product_id) references products (id)
+Hibernate: alter table orders add constraint FK32ql8ubntj5uh44ph9659tiih foreign key (user_id) references users (id)
+Hibernate: alter table products add constraint FKog2rp4qthbtt2lfyhfo32lsw9 foreign key (category_id) references categories (id)
+2026-03-11T19:12:48.771+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:12:49.317+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:12:49.352+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:12:50.143+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:12:50.210+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:12:50.223+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 12.78 seconds (process running for 14.094)
+2026-03-11T19:13:00.113+05:30 ERROR 22652 --- [Alisam_Codes] [pring-session-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < ?
+]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:649) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:648) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mm_printers.spring_session' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	... 14 common frames omitted
+
+2026-03-11T19:14:00.009+05:30 ERROR 22652 --- [Alisam_Codes] [pring-session-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < ?
+]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:649) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:648) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mm_printers.spring_session' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	... 14 common frames omitted
+
+2026-03-11T19:14:13.169+05:30  INFO 22652 --- [Alisam_Codes] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-11T19:14:13.169+05:30  INFO 22652 --- [Alisam_Codes] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-11T19:14:13.169+05:30  INFO 22652 --- [Alisam_Codes] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Hibernate: select c1_0.id,c1_0.description,c1_0.image_url,c1_0.name from categories c1_0
+Hibernate: select p1_0.id,p1_0.category_id,p1_0.description,p1_0.image_url,p1_0.is_customizable,p1_0.name,p1_0.price from products p1_0
+2026-03-11T19:15:00.003+05:30 ERROR 22652 --- [Alisam_Codes] [pring-session-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < ?
+]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:649) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:648) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mm_printers.spring_session' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	... 14 common frames omitted
+
+2026-03-11T19:16:00.021+05:30 ERROR 22652 --- [Alisam_Codes] [pring-session-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < ?
+]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:649) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:648) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mm_printers.spring_session' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	... 14 common frames omitted
+
+2026-03-11T19:17:00.018+05:30 ERROR 22652 --- [Alisam_Codes] [pring-session-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < ?
+]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:649) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:648) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mm_printers.spring_session' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	... 14 common frames omitted
+
+2026-03-11T19:18:00.015+05:30 ERROR 22652 --- [Alisam_Codes] [pring-session-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < ?
+]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:649) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:648) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mm_printers.spring_session' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	... 14 common frames omitted
+
+2026-03-11T19:19:00.010+05:30 ERROR 22652 --- [Alisam_Codes] [pring-session-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < ?
+]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:649) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:648) ~[spring-session-jdbc-3.5.5.jar:3.5.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mm_printers.spring_session' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	... 14 common frames omitted
+
+2026-03-11T19:19:42.703+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-11T19:19:42.715+05:30  INFO 22652 --- [Alisam_Codes] [       Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:19:42.736+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:19:42.742+05:30  INFO 22652 --- [Alisam_Codes] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:19:42.750+05:30  INFO 22652 --- [Alisam_Codes] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-11T19:19:42.771+05:30  INFO 22652 --- [Alisam_Codes] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:19:43.035+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:19:43.036+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:19:43.634+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:19:43.725+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:19:44.139+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:19:44.142+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:19:44.142+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:19:44.189+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:19:44.189+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1140 ms
+2026-03-11T19:19:44.260+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-11T19:19:44.270+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72300175
+2026-03-11T19:19:44.270+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-11T19:19:45.221+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:19:45.227+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:19:45.246+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:19:45.250+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:19:45.250+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:19:47.172+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:19:47.275+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:19:47.998+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:19:48.384+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:19:49.330+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:19:49.410+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:19:49.481+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 6.585 seconds (process running for 433.351)
+2026-03-11T19:19:49.483+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:20:00.726+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
+2026-03-11T19:20:00.736+05:30  INFO 22652 --- [Alisam_Codes] [       Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:20:00.840+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:20:00.843+05:30  INFO 22652 --- [Alisam_Codes] [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:20:00.845+05:30  INFO 22652 --- [Alisam_Codes] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-11T19:20:00.871+05:30  INFO 22652 --- [Alisam_Codes] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:20:01.048+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:20:01.049+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:20:01.328+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:20:01.363+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:20:01.514+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:20:01.514+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:20:01.516+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:20:01.557+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:20:01.557+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 506 ms
+2026-03-11T19:20:01.591+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-03-11T19:20:01.593+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-11T19:20:01.600+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-11T19:20:01.629+05:30 ERROR 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:21:54.281+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:21:54.281+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:21:54.301+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes\com\example\Alisam_Codes\models\Order.class]
+2026-03-11T19:21:54.319+05:30 ERROR 22652 --- [Alisam_Codes] [  restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes\com\example\Alisam_Codes\models\Order.class]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:509) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:350) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:277) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:346) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.12-SNAPSHOT.jar:3.5.12-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.12-SNAPSHOT.jar:3.5.12-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.12-SNAPSHOT.jar:3.5.12-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.12-SNAPSHOT.jar:3.5.12-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.12-SNAPSHOT.jar:3.5.12-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.12-SNAPSHOT.jar:3.5.12-SNAPSHOT]
+	at com.example.Alisam_Codes.AlisamCodesApplication.main(AlisamCodesApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.12-SNAPSHOT.jar:3.5.12-SNAPSHOT]
+Caused by: java.nio.file.AccessDeniedException: C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes\com\example\Alisam_Codes\models\Order.class
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89) ~[na:na]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[na:na]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[na:na]
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234) ~[na:na]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380) ~[na:na]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432) ~[na:na]
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[na:na]
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160) ~[na:na]
+	at org.springframework.core.io.FileSystemResource.getInputStream(FileSystemResource.java:193) ~[spring-core-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:122) ~[spring-core-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:469) ~[spring-context-6.2.17-SNAPSHOT.jar:6.2.17-SNAPSHOT]
+	... 23 common frames omitted
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:21:55.936+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:21:55.936+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:21:56.526+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:21:56.688+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2026-03-11T19:21:57.054+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:21:57.057+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:21:57.057+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:21:57.285+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:21:57.285+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1342 ms
+2026-03-11T19:22:01.090+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-03-11T19:22:01.102+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c7f045f
+2026-03-11T19:22:01.102+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-03-11T19:22:01.542+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:22:01.549+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:22:01.573+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:22:01.593+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:22:01.593+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:22:01.991+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:22:02.042+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:22:02.127+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:22:02.142+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:22:03.751+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:22:03.948+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:22:03.964+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 8.116 seconds (process running for 567.834)
+2026-03-11T19:22:03.966+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:25:49.921+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 20 class path changes (0 additions, 0 deletions, 20 modifications)
+2026-03-11T19:25:49.924+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:25:49.940+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:25:49.940+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:25:49.944+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-03-11T19:25:49.955+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:25:50.244+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:25:50.244+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:25:50.871+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:25:50.903+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:25:51.104+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:25:51.195+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:25:51.196+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:25:51.334+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:25:51.334+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1084 ms
+2026-03-11T19:25:51.435+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-03-11T19:25:51.446+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4dfdad0b
+2026-03-11T19:25:51.446+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-03-11T19:25:51.490+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:25:51.496+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:25:51.513+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:25:51.518+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:25:51.518+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:25:51.701+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:25:51.768+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:25:52.024+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:25:52.042+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:25:52.246+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:25:52.263+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:25:52.271+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 2.174 seconds (process running for 796.14)
+2026-03-11T19:25:52.273+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:27:32.406+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-11T19:27:32.408+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-20] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:27:32.471+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:27:32.474+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:27:32.474+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-11T19:27:32.489+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:27:32.647+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:27:32.647+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:27:33.068+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:27:33.174+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:27:33.370+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:27:33.374+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:27:33.375+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:27:33.417+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:27:33.417+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
+2026-03-11T19:27:33.463+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-03-11T19:27:33.473+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6160d30c
+2026-03-11T19:27:33.473+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-03-11T19:27:33.505+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:27:33.512+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:27:33.533+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:27:33.539+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:27:33.540+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:27:33.896+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:27:33.949+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:27:34.110+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:27:34.123+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:27:34.283+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:27:34.300+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:27:34.307+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 1.699 seconds (process running for 898.176)
+2026-03-11T19:27:34.308+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:28:03.233+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
+2026-03-11T19:28:03.233+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-24] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:28:03.254+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:28:03.260+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:28:03.260+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-03-11T19:28:03.269+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:28:03.390+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:28:03.391+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:28:03.826+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:28:03.860+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:28:04.016+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:28:04.018+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:28:04.018+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:28:04.058+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:28:04.058+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 665 ms
+2026-03-11T19:28:04.081+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-03-11T19:28:04.081+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-11T19:28:04.089+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-11T19:28:04.096+05:30 ERROR 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:31:31.140+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:31:31.142+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:31:31.569+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:31:31.606+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:31:31.781+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:31:31.787+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:31:31.787+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:31:31.854+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:31:31.856+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 712 ms
+2026-03-11T19:31:31.935+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-03-11T19:31:31.964+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@325a5a67
+2026-03-11T19:31:31.965+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-03-11T19:31:31.993+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:31:32.000+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:31:32.019+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:31:32.025+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:31:32.026+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:31:32.237+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:31:32.291+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:31:32.481+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:31:32.503+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:31:32.982+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:31:33.367+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:31:33.372+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 2.273 seconds (process running for 1137.241)
+2026-03-11T19:31:33.375+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:31:43.681+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 24 deletions, 0 modifications)
+2026-03-11T19:31:43.681+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-28] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:31:43.697+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:31:43.700+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:31:43.700+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-03-11T19:31:43.704+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:31:43.829+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:31:43.829+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:31:44.278+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:31:44.281+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-03-11T19:31:44.499+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:31:44.501+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:31:44.501+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:31:44.539+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:31:44.539+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 706 ms
+2026-03-11T19:31:44.561+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-03-11T19:31:44.563+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-11T19:31:44.569+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-11T19:31:44.575+05:30 ERROR 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:32:52.920+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:32:52.920+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:32:53.652+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:32:53.655+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-03-11T19:32:54.128+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:32:54.130+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:32:54.130+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:32:54.312+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:32:54.312+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1386 ms
+2026-03-11T19:32:57.872+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-03-11T19:32:57.880+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51a535e0
+2026-03-11T19:32:57.880+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-03-11T19:32:57.903+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:32:57.908+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:32:57.922+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:32:57.925+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:32:57.926+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:32:57.953+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:32:57.954+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:32:57.985+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:32:58.067+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-03-11T19:32:58.149+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:32:58.166+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:32:58.172+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 5.352 seconds (process running for 1222.042)
+2026-03-11T19:32:58.174+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:33:00.001+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-11T19:33:00.008+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-35] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:33:00.025+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:33:00.028+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:33:00.028+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-03-11T19:33:00.038+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:33:00.150+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:33:00.150+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:33:00.731+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:33:00.754+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-03-11T19:33:01.274+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:33:01.275+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:33:01.275+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:33:01.331+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:33:01.331+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1181 ms
+2026-03-11T19:33:01.391+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-03-11T19:33:01.474+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@474b820
+2026-03-11T19:33:01.474+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-03-11T19:33:01.494+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:33:01.499+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:33:01.512+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:33:01.515+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:33:01.516+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:33:01.541+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:33:01.541+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:33:01.567+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:33:01.615+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:33:02.828+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:33:02.843+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:33:02.847+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 2.739 seconds (process running for 1226.716)
+2026-03-11T19:33:02.848+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:34:27.426+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-11T19:34:27.442+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-42] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:34:27.471+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:34:27.484+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:34:27.485+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-03-11T19:34:27.553+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:34:27.695+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:34:27.695+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:34:28.033+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:34:28.035+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-03-11T19:34:28.208+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:34:28.212+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:34:28.215+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:34:28.269+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:34:28.269+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 572 ms
+2026-03-11T19:34:28.311+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-03-11T19:34:28.320+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@531ef8c6
+2026-03-11T19:34:28.320+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-03-11T19:34:28.346+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:34:28.353+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:34:28.371+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:34:28.376+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:34:28.376+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:34:28.407+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:34:28.407+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:34:28.433+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:34:28.456+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:34:28.680+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:34:28.700+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:34:28.704+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 1.074 seconds (process running for 1312.573)
+2026-03-11T19:34:28.705+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:34:45.518+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2026-03-11T19:34:45.520+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-46] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:34:45.535+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:34:45.538+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:34:45.538+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-03-11T19:34:45.547+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:34:45.655+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:34:45.655+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:34:46.025+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:34:46.028+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-03-11T19:34:46.209+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:34:46.211+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:34:46.211+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:34:46.254+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:34:46.255+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 595 ms
+2026-03-11T19:34:46.279+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-03-11T19:34:46.280+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-11T19:34:46.286+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-11T19:34:46.293+05:30 ERROR 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:35:21.928+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:35:21.928+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:35:22.481+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:35:22.488+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-03-11T19:35:22.746+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:35:22.747+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:35:22.747+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:35:22.836+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:35:22.836+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 905 ms
+2026-03-11T19:35:22.911+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-03-11T19:35:22.921+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6528c95a
+2026-03-11T19:35:22.921+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-03-11T19:35:22.945+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:35:22.951+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:35:22.969+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:35:22.972+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:35:22.973+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:35:23.004+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:35:23.004+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:35:23.040+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:35:23.057+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:35:23.552+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:35:23.635+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:35:23.639+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 1.792 seconds (process running for 1367.508)
+2026-03-11T19:35:23.641+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:35:32.537+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 19 class path changes (19 additions, 0 deletions, 0 modifications)
+2026-03-11T19:35:32.539+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-50] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:35:32.552+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:35:32.555+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:35:32.555+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-03-11T19:35:32.564+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:35:32.679+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:35:32.679+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:35:33.150+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:35:33.175+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:35:33.315+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:35:33.316+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:35:33.316+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:35:33.353+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:35:33.353+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 671 ms
+2026-03-11T19:35:33.386+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-03-11T19:35:33.393+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f6959be
+2026-03-11T19:35:33.393+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-03-11T19:35:33.415+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:35:33.421+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:35:33.432+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:35:33.435+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:35:33.435+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:35:33.808+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:35:33.850+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:35:34.026+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:35:34.040+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:35:34.168+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:35:34.245+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:35:34.253+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 1.615 seconds (process running for 1378.123)
+2026-03-11T19:35:34.255+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:38:12.492+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
+2026-03-11T19:38:12.496+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-57] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:38:12.534+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:38:12.537+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-57] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:38:12.539+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-03-11T19:38:12.552+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:38:12.766+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:38:12.767+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:38:13.133+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:38:13.160+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:38:13.404+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:38:13.406+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:38:13.406+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:38:13.447+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:38:13.447+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 676 ms
+2026-03-11T19:38:13.482+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-03-11T19:38:13.482+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-11T19:38:13.489+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-11T19:38:13.498+05:30 ERROR 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:43:34.710+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:43:34.710+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:43:35.285+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:43:35.325+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:43:35.553+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:43:35.558+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:43:35.558+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:43:35.634+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:43:35.636+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 921 ms
+2026-03-11T19:43:35.989+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-03-11T19:43:35.989+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-11T19:43:35.997+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-11T19:43:36.005+05:30 ERROR 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:43:43.976+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:43:43.977+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:43:45.394+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:43:45.704+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 306 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:43:46.425+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:43:46.426+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:43:46.426+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:43:46.678+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-6].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:43:46.678+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2698 ms
+2026-03-11T19:43:51.688+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-03-11T19:43:51.703+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a3ce09f
+2026-03-11T19:43:51.704+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-03-11T19:43:51.848+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:43:51.853+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:43:51.873+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:43:51.876+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:43:51.877+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-12)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:43:52.557+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:43:52.607+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:43:53.977+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:43:53.995+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:43:54.835+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:43:55.373+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:43:55.451+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 12.063 seconds (process running for 1879.25)
+2026-03-11T19:43:55.452+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:44:10.820+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 26 class path changes (13 additions, 0 deletions, 13 modifications)
+2026-03-11T19:44:10.827+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-61] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:44:10.886+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:44:10.889+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-61] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:44:10.891+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-03-11T19:44:10.907+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:44:11.224+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:44:11.224+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:44:12.703+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:44:12.773+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:44:13.495+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:44:13.515+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:44:13.515+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:44:13.575+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-6].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:44:13.575+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2348 ms
+2026-03-11T19:44:13.674+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-03-11T19:44:13.691+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6245ca27
+2026-03-11T19:44:13.691+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-03-11T19:44:13.725+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:44:13.734+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:44:13.748+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:44:13.761+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:44:13.761+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-13)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:44:14.505+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:44:14.548+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:44:18.294+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:44:18.323+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:44:18.590+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:44:18.775+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:44:18.784+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 7.719 seconds (process running for 1902.653)
+2026-03-11T19:44:18.786+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:44:20.221+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2026-03-11T19:44:20.225+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-71] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:44:20.439+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:44:20.443+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:44:20.443+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-03-11T19:44:20.457+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:44:20.615+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:44:20.618+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:44:21.091+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:44:21.134+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:44:21.409+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:44:21.409+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:44:21.409+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:44:21.484+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-6].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:44:21.484+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2026-03-11T19:44:21.525+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2026-03-11T19:44:21.534+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@607f6a30
+2026-03-11T19:44:21.534+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2026-03-11T19:44:21.564+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:44:21.570+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:44:21.584+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:44:21.589+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:44:21.590+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-14)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:44:21.767+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:44:21.807+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:44:22.891+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:44:22.904+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:44:23.127+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:44:23.152+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:44:23.156+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 2.6 seconds (process running for 1907.026)
+2026-03-11T19:44:23.158+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:52:59.952+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
+2026-03-11T19:53:00.010+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-75] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:53:00.180+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:53:00.183+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-75] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:53:00.183+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2026-03-11T19:53:00.227+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:53:00.377+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:53:00.377+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:53:00.741+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:53:00.758+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:53:00.915+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:53:00.915+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:53:00.915+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:53:00.964+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-6].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:53:00.964+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 587 ms
+2026-03-11T19:53:01.002+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-03-11T19:53:01.002+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-11T19:53:01.006+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-11T19:53:01.012+05:30 ERROR 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:53:39.662+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:53:39.662+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:53:40.945+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:53:40.992+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 0 JPA repository interfaces.
+2026-03-11T19:53:41.317+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:53:41.318+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:53:41.319+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:53:41.414+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-7].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:53:41.415+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1749 ms
+2026-03-11T19:53:41.537+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2026-03-11T19:53:41.552+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c3fa34c
+2026-03-11T19:53:41.552+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2026-03-11T19:53:41.587+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:53:41.593+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:53:41.616+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:53:41.624+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:53:41.625+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-15)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:53:41.663+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:53:41.663+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:53:42.129+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:53:42.145+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:53:42.769+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:53:42.801+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:53:42.805+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 3.292 seconds (process running for 2466.674)
+2026-03-11T19:53:42.806+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:53:44.760+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 19 class path changes (19 additions, 0 deletions, 0 modifications)
+2026-03-11T19:53:44.761+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-79] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:53:44.774+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:53:44.776+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-79] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:53:44.777+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2026-03-11T19:53:44.784+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:53:44.907+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:53:44.908+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:53:45.613+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:53:45.871+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 181 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:53:46.308+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:53:46.309+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:53:46.310+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:53:46.394+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-7].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:53:46.394+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1483 ms
+2026-03-11T19:53:46.567+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2026-03-11T19:53:46.609+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15bb496f
+2026-03-11T19:53:46.609+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2026-03-11T19:53:46.635+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:53:46.640+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:53:46.655+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:53:46.659+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:53:46.659+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-16)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:53:48.012+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:53:48.062+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:53:49.412+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:53:49.423+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:53:49.535+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:53:49.554+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:53:49.562+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 4.693 seconds (process running for 2473.43)
+2026-03-11T19:53:49.563+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:55:15.414+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
+2026-03-11T19:55:15.431+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-86] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:55:15.779+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:55:15.782+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-86] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:55:15.783+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-86] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2026-03-11T19:55:15.797+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-86] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:55:15.929+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:55:15.929+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:55:16.257+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:55:16.276+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:55:16.431+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:55:16.433+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:55:16.434+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:55:16.480+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-7].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:55:16.480+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 546 ms
+2026-03-11T19:55:16.526+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-03-11T19:55:16.526+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-11T19:55:16.531+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-11T19:55:16.543+05:30 ERROR 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:55:46.217+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:55:46.217+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:55:46.870+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:55:46.896+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2026-03-11T19:55:47.117+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:55:47.118+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:55:47.118+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:55:47.197+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-8].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:55:47.197+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 976 ms
+2026-03-11T19:55:47.286+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2026-03-11T19:55:47.295+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50cc54c4
+2026-03-11T19:55:47.295+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2026-03-11T19:55:47.323+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:55:47.328+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:55:47.344+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:55:47.348+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:55:47.348+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-17)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:55:47.377+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:55:47.377+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:55:47.428+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:55:53.217+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:55:53.865+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:55:53.885+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:55:53.889+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 7.761 seconds (process running for 2597.758)
+2026-03-11T19:55:53.892+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-11T19:55:55.367+05:30  INFO 22652 --- [Alisam_Codes] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 19 class path changes (19 additions, 0 deletions, 0 modifications)
+2026-03-11T19:55:55.369+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-90] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-11T19:55:55.385+05:30  INFO 22652 --- [Alisam_Codes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-11T19:55:55.387+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-90] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:55:55.388+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2026-03-11T19:55:55.404+05:30  INFO 22652 --- [Alisam_Codes] [      Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.5.12-SNAPSHOT)
+
+2026-03-11T19:55:55.535+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Starting AlisamCodesApplication using Java 23 with PID 22652 (C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes\target\classes started by USER in C:\Users\USER\OneDrive\Desktop\ABCD company\Alisam Codes\java backEnd\Alisam_Codes)
+2026-03-11T19:55:55.536+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-11T19:55:55.881+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T19:55:55.915+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 4 JPA repository interfaces.
+2026-03-11T19:55:56.178+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T19:55:56.179+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T19:55:56.179+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-11T19:55:56.219+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.a.c.c.C.[Tomcat-8].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-11T19:55:56.220+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 682 ms
+2026-03-11T19:55:56.272+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2026-03-11T19:55:56.280+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4784ec30
+2026-03-11T19:55:56.280+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2026-03-11T19:55:56.307+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T19:55:56.313+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T19:55:56.328+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T19:55:56.331+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T19:55:56.332+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-18)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-11T19:55:56.618+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-11T19:55:56.668+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T19:55:56.852+05:30  WARN 22652 --- [Alisam_Codes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T19:55:56.864+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-11T19:55:57.057+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-11T19:55:57.088+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-11T19:55:57.094+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] c.e.Alisam_Codes.AlisamCodesApplication  : Started AlisamCodesApplication in 1.598 seconds (process running for 2600.963)
+2026-03-11T19:55:57.096+05:30  INFO 22652 --- [Alisam_Codes] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

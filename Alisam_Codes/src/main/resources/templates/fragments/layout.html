@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alisam Cart - India's premium custom printing store.">
+    <title>Alisam Cart - Custom Printing, Reimagined</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6366f1', // Indigo 500
+                        primaryHover: '#4f46e5', // Indigo 600
+                        secondary: '#ec4899', // Pink 500
+                        dark: '#0f172a', // Slate 900
+                        light: '#f8fafc' // Slate 50
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass {
+                @apply bg-white/85 backdrop-blur-md shadow-sm border-b border-gray-200/50;
+            }
+            .glass-card {
+                @apply bg-white/70 backdrop-blur-lg border border-white max-w-full rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+            }
+        }
+        body {
+            @apply font-sans bg-[#F9FAFB] text-gray-800 antialiased flex flex-col min-h-screen;
+        }
+        /* Hide scrollbar for category nav but allow scrolling */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== PREMIUM GLASS HEADER ===== -->
+    <header class="header flex flex-col w-full z-50 sticky top-0 glass transition-all duration-300">
+        
+        <!-- Top Announcement Bar (Optional) -->
+        <div class="bg-primary text-white text-[11px] font-medium text-center py-1.5 tracking-wide uppercase">
+            🎉 Flat 20% Off on all Custom Mugs! Use Code: ALISAM20
+        </div>
+
+        <!-- Main Top Bar -->
+        <div class="px-4 md:px-8 py-3 flex items-center justify-between gap-6 overflow-visible">
+            
+            <!-- Logo -->
+            <a href="/" class="flex flex-col flex-shrink-0 group">
+                <div class="text-2xl font-black tracking-tighter text-dark leading-none flex items-center gap-1.5">
+                    <i class="fas fa-layer-group text-primary text-xl group-hover:scale-110 transition-transform"></i>
+                    <img src="/images/logo.png" alt="Alisam Cart" class="h-7 md:h-9 w-auto">
+                </div>
+                <div class="text-[9px] font-bold text-gray-400 tracking-[0.2em] uppercase mt-0.5 ml-7">Customized For You</div>
+            </a>
+
+            <!-- Search Bar -->
+            <div class="hidden md:flex flex-1 max-w-2xl mx-auto relative group">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <i class="fas fa-search text-gray-400 group-focus-within:text-primary transition-colors"></i>
+                </div>
+                <input type="text" id="searchInput" placeholder="Search for Mugs, T-Shirts, Phone Covers..." 
+                       class="w-full py-2.5 pl-11 pr-4 bg-gray-100/80 border border-transparent rounded-full text-sm outline-none focus:bg-white focus:border-primary/30 focus:ring-4 focus:ring-primary/10 transition-all shadow-inner">
+                <button id="searchBtn" class="absolute inset-y-1.5 right-1.5 bg-primary hover:bg-primaryHover text-white px-5 rounded-full text-xs font-bold tracking-wide transition-colors">
+                    SEARCH
+                </button>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="flex items-center gap-5 md:gap-7">
+                
+                <!-- Track Order -->
+                <a href="#" class="hidden lg:flex flex-col items-center justify-center text-gray-600 hover:text-primary transition-colors group">
+                    <i class="fas fa-map-marked-alt text-lg md:text-xl mb-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-wide">Track</span>
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobileMenuBtn" class="md:hidden flex flex-col items-center justify-center text-gray-600 hover:text-primary transition-colors focus:outline-none">
+                    <i class="fas fa-bars text-xl md:text-2xl mb-0.5"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-wide">Menu</span>
+                </button>
+
+                <!-- Account (Login / Profile) -->
+                <div th:if="${session.loggedInUser == null}" class="hidden md:block">
+                    <a href="/login" class="flex flex-col items-center justify-center text-gray-600 hover:text-primary transition-colors group">
+                        <i class="far fa-user text-lg md:text-xl mb-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"></i>
+                        <span class="text-[10px] font-bold uppercase tracking-wide">Login</span>
+                    </a>
+                </div>
+                
+                <div th:if="${session.loggedInUser != null}" class="hidden md:block">
+                    <a href="/profile" class="flex flex-col items-center justify-center text-gray-600 hover:text-primary transition-colors group">
+                        <div class="w-6 h-6 md:w-7 md:h-7 rounded-full overflow-hidden mb-0.5 group-hover:-translate-y-0.5 transition-transform duration-300 border-2 border-transparent group-hover:border-primary shadow-md">
+                            <img th:src="${session.loggedInUser.profilePhotoUrl != null and !session.loggedInUser.profilePhotoUrl.isEmpty() ? session.loggedInUser.profilePhotoUrl : 'https://ui-avatars.com/api/?background=6366f1&color=fff&name=' + session.loggedInUser.name}" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-[10px] font-bold uppercase tracking-wide text-primary" th:text="${session.loggedInUser.coins + ' Coins'}">0 Coins</span>
+                    </a>
+                </div>
+
+                <!-- Cart -->
+                <a href="/cart" class="flex flex-col items-center justify-center text-gray-600 hover:text-primary transition-colors group relative">
+                    <div class="relative">
+                        <i class="fas fa-shopping-bag text-xl md:text-2xl mb-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"></i>
+                        <span id="cartBadge" class="absolute -top-1.5 -right-2 bg-primary text-white text-[10px] font-bold px-1.5 min-w-[16px] h-[16px] rounded-full flex items-center justify-center shadow-md">0</span>
+                    </div>
+                    <span class="text-[10px] font-bold uppercase tracking-wide">Cart</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Secondary Nav Bar -->
+        <nav class="border-t border-gray-100 bg-white/50 hidden md:block">
+            <div class="max-w-[100%] px-8 py-2.5 flex items-center justify-center gap-8 overflow-x-auto no-scrollbar text-[13px] font-bold text-gray-600 uppercase tracking-wide">
+                <a href="/products" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-grip-horizontal text-primary"></i> All Products</a>
+                <a href="/products?categoryId=1" class="hover:text-primary transition-colors">Mugs & Sippers</a>
+                <a href="/products?categoryId=2" class="hover:text-primary transition-colors">T-Shirts & Apparel</a>
+                <a href="/products?categoryId=3" class="hover:text-primary transition-colors">Mobile Covers</a>
+                <a href="/products?categoryId=4" class="hover:text-primary transition-colors">Photo Gifts</a>
+                <a href="#" class="hover:text-secondary transition-colors text-secondary items-center gap-1 hidden lg:flex rounded-full bg-secondary/10 px-3 py-1 shadow-sm"><i class="fas fa-tags"></i> Offers</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 flex flex-col text-sm font-bold text-gray-700 uppercase tracking-wide z-50">
+            <a href="/products" class="px-6 py-4 border-b border-gray-50 flex items-center gap-3 hover:bg-gray-50"><i class="fas fa-grip-horizontal text-primary w-5 text-center"></i> All Products</a>
+            <a href="/products?categoryId=1" class="px-6 py-4 border-b border-gray-50 flex items-center gap-3 hover:bg-gray-50"><i class="fas fa-coffee text-primary w-5 text-center"></i> Mugs & Sippers</a>
+            <a href="/products?categoryId=2" class="px-6 py-4 border-b border-gray-50 flex items-center gap-3 hover:bg-gray-50"><i class="fas fa-tshirt text-primary w-5 text-center"></i> T-Shirts & Apparel</a>
+            <a href="/products?categoryId=3" class="px-6 py-4 border-b border-gray-50 flex items-center gap-3 hover:bg-gray-50"><i class="fas fa-mobile-alt text-primary w-5 text-center"></i> Mobile Covers</a>
+            <a href="/products?categoryId=4" class="px-6 py-4 border-b border-gray-50 flex items-center gap-3 hover:bg-gray-50"><i class="fas fa-gift text-primary w-5 text-center"></i> Photo Gifts</a>
+            
+            <div class="px-6 py-4 border-b border-gray-50 flex justify-between bg-gray-50/50">
+                <div th:if="${session.loggedInUser == null}">
+                    <a href="/login" class="flex items-center gap-2 text-primary"><i class="far fa-user"></i> Login / Verify</a>
+                </div>
+                <div th:if="${session.loggedInUser != null}">
+                    <a href="/profile" class="flex items-center gap-2 text-primary"><i class="far fa-user-circle"></i> My Account</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main layout:fragment="content" class="flex-grow w-full pb-16">
+        <!-- page content injected here -->
+    </main>
+
+    <!-- ===== PREMIUM FOOTER ===== -->
+    <footer class="mt-auto bg-white border-t border-gray-200 text-gray-600">
+        <!-- Main Footer Links -->
+        <div class="py-12 md:py-16">
+            <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+                
+                <!-- Brand Info -->
+                <div class="col-span-1 md:col-span-1 pr-4">
+                    <div class="text-2xl font-black tracking-tighter text-dark leading-none flex items-center gap-1.5 mb-4">
+                        <img src="/images/logo.png" alt="Alisam Cart" class="h-8 mb-2">
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6">India's largest online custom printing store. Personalize your lifestyle and everything around you with high-quality printing.</p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links Grid -->
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-5">Products</h3>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li><a href="#" class="hover:text-primary transition-colors">Custom Mobile Covers</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Photo Mugs</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Printed T-Shirts</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Custom Posters</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Corporate Gifts</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-5">Support</h3>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li><a href="#" class="hover:text-primary transition-colors">Track Application</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Return Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-5">Newsletter</h3>
+                    <p class="text-sm mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <div class="flex flex-col gap-2">
+                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-gray-100 border border-transparent rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all">
+                        <button class="w-full bg-dark hover:bg-gray-800 text-white font-bold py-3 rounded-lg text-sm transition-colors">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="bg-gray-50 py-6 border-t border-gray-200">
+            <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
+                <p>&copy; 2026 Alisam Cart. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Rupay-Logo.png/1200px-Rupay-Logo.png" class="h-5 opacity-60 grayscale hover:grayscale-0 transition-all" alt="Rupay">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" class="h-4 opacity-60 grayscale hover:grayscale-0 transition-all" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/2560px-Mastercard-logo.svg.png" class="h-5 opacity-60 grayscale hover:grayscale-0 transition-all" alt="Mastercard">
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script th:src="@{/js/main.js}"></script>
+    <script>
+        // Mobile Menu Toggle Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobileMenuBtn');
+            const menu = document.getElementById('mobileMenu');
+            if(btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

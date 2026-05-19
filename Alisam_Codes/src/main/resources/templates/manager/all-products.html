@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products - Manager Dashboard</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="bg-gray-100 font-sans antialiased text-gray-900">
+
+    <div class="flex h-screen overflow-hidden">
+        
+        <!-- Sidebar -->
+        <aside class="w-64 bg-[#111] text-white flex flex-col">
+            <div class="p-6 text-2xl font-black text-center tracking-widest border-b border-gray-800">
+                ALISAM CART<span class="text-[#00c853]">.</span>
+                <div class="text-[10px] text-gray-400 font-normal tracking-normal mt-1">Manager Portal</div>
+            </div>
+            <nav class="flex-1 px-4 py-6 space-y-2">
+                <a href="/manager/dashboard" class="flex items-center gap-3 text-gray-300 hover:bg-gray-800 hover:text-white px-4 py-3 rounded-lg font-medium transition-colors">
+                    <i class="fas fa-boxes"></i> My Products
+                </a>
+                <a href="/manager/all-products" class="flex items-center gap-3 bg-[#00c853] text-gray-900 px-4 py-3 rounded-lg font-bold transition-colors">
+                    <i class="fas fa-list-ul"></i> All Products
+                </a>
+                <a href="/manager/products/new" class="flex items-center gap-3 text-gray-300 hover:bg-gray-800 hover:text-white px-4 py-3 rounded-lg font-medium transition-colors">
+                    <i class="fas fa-plus"></i> Add Product
+                </a>
+            </nav>
+            <div class="p-4 border-t border-gray-800">
+                <a href="/" class="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm">
+                    <i class="fas fa-sign-out-alt"></i> Back to Store
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col overflow-y-auto">
+            
+            <header class="bg-white shadow-sm px-8 py-4 flex justify-between items-center sticky top-0 z-10">
+                <h1 class="text-xl font-bold text-gray-800">All Products Directory</h1>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-full bg-gray-200 border-2 border-[#00c853] overflow-hidden">
+                        <img src="https://ui-avatars.com/api/?name=Manager&background=00c853&color=fff" alt="Manager">
+                    </div>
+                </div>
+            </header>
+
+            <div class="p-8">
+                
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold">All Products</h2>
+                    <a href="/manager/products/new" class="bg-[#00c853] hover:bg-[#00a844] text-white px-6 py-2 rounded-lg font-bold shadow transition-colors">
+                        + Add New Product
+                    </a>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div th:each="product : ${products}" class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col group border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="h-48 relative overflow-hidden bg-gray-50 flex items-center justify-center">
+                            <img th:src="${product.imageUrl}" onerror="this.src='https://placehold.co/400x300?text=No+Image'" alt="Product Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4 flex-1 flex flex-col">
+                            <h3 class="font-bold text-gray-900 mb-1 truncate" th:text="${product.name}">Product Name</h3>
+                            <div class="text-[#00c853] font-black text-lg mt-auto" th:text="'₹' + ${product.price}">₹499</div>
+                            
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex gap-2">
+                                <a th:href="@{'/manager/products/edit/' + ${product.id}}" class="flex-1 text-center bg-[#00c853]/10 hover:bg-[#00c853]/20 text-[#00c853] font-semibold py-1.5 rounded text-sm transition-colors" title="Edit Product">
+                                    <i class="fas fa-edit"></i> Edit
+                                </a>
+                                <!-- Restrict deletion of any product: wait, keeping it just for their own products? Or remove delete from All Products view -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div th:if="${products == null or products.isEmpty()}" class="col-span-full py-12 text-center text-gray-500 bg-white rounded-xl border border-dashed border-gray-300">
+                        <i class="fas fa-box-open text-4xl mb-3 text-gray-300"></i>
+                        <p class="font-medium text-lg">No products available in the store.</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

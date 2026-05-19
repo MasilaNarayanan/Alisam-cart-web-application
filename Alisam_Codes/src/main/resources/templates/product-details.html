@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{fragments/layout}">
+<head>
+    <title>Alisam Cart - 3D Product Customization</title>
+    <!-- Model Viewer web component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+        .amazon-link {
+            @apply text-primary hover:text-primaryHover hover:underline cursor-pointer transition-colors;
+        }
+        .amazon-hr {
+            @apply border-t border-gray-300 my-4;
+        }
+        model-viewer {
+            width: 100%;
+            height: 500px;
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='50%25' y='50%25' font-size='20' font-family='Impact, Arial Black, sans-serif' font-weight='900' font-style='italic' text-anchor='middle' transform='rotate(-35 80 80)'%3E%3Ctspan fill='rgba(99,102,241,0.08)'%3EALISAM%3C/tspan%3E%3Ctspan fill='rgba(236,72,153,0.08)' dx='4'%3ECart%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+            background-repeat: repeat;
+            border-radius: 1rem;
+            border: 4px solid #000000;
+            --poster-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <main layout:fragment="content" class="bg-white pb-16 w-full">
+        
+        <!-- Breadcrumbs -->
+        <div class="w-full max-w-[1500px] mx-auto px-4 py-2 text-xs text-gray-500 font-medium">
+            <a href="/" class="amazon-link">Home</a>
+            <span class="mx-1">›</span>
+            <a href="/products" class="amazon-link">Shop</a>
+            <span class="mx-1">›</span>
+            <a href="/products?categoryId=1" class="amazon-link">Custom Prints</a>
+            <span class="mx-1">›</span>
+            <span th:text="${product != null ? product.name : 'Personalized Product'}">Product Name</span>
+        </div>
+
+        <div class="w-full max-w-[1500px] mx-auto px-4 py-4">
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                
+                <!-- ================== COLUMN 1: 3D MODEL VIEWER ================== -->
+                <div class="w-full lg:w-[45%] flex gap-4 xl:gap-6 sticky top-24 self-start">
+                    
+                    <div class="flex-1 relative cursor-crosshair flex flex-col items-center justify-center p-0">
+                        <div class="w-full relative group">
+                            <!-- 3D Model Viewer -->
+                            <model-viewer id="product-3d-model"
+                                th:src="${product != null && product.modelGlbPath != null ? product.modelGlbPath : 'https://modelviewer.dev/shared-assets/models/Astronaut.glb'}"
+                                alt="A 3D model of the product"
+                                auto-rotate 
+                                camera-controls
+                                shadow-intensity="1"
+                                environment-image="neutral">
+                            </model-viewer>
+                            
+                            <div class="absolute bottom-4 left-0 right-0 text-center pointer-events-none">
+                                <span class="bg-black/60 text-white px-3 py-1.5 rounded-full text-xs font-bold backdrop-blur-sm">
+                                    <i class="fas fa-hand-pointer mr-1"></i> Drag to Rotate, Scroll to Zoom
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================== COLUMN 2: PRODUCT DETAILS ================== -->
+                <div class="w-full lg:w-[30%] flex flex-col">
+                    
+                    <!-- Title & Brand -->
+                    <div class="flex justify-between items-start">
+                        <h1 class="text-2xl font-bold text-gray-900 leading-tight mb-1" th:text="${product != null ? product.name : 'Premium Custom Printed Product'}">Product Name</h1>
+                        <i class="far fa-heart text-xl text-gray-400 hover:text-rose-500 cursor-pointer transition-colors ml-4 mt-1" title="Add to Wish List"></i>
+                    </div>
+                    <a href="#" class="amazon-link text-sm mb-2 font-medium">Visit the Alisam Cart Store</a>
+                    
+                    <!-- Ratings -->
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="flex items-center gap-1 cursor-pointer">
+                            <span class="text-sm font-bold text-gray-900">4.8</span>
+                            <div class="text-amber-500 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="#" class="amazon-link text-sm">1,204 ratings</a>
+                    </div>
+                    
+                    <!-- Choice Badge -->
+                    <div class="mb-2">
+                        <span class="bg-dark text-white text-[11px] font-bold px-2 py-1 relative rounded-sm">
+                            VJ's <span class="text-primary">Signature</span>
+                        </span>
+                        <span class="text-sm font-medium text-gray-600 ml-3">Coimbatore's Best Print Quality</span>
+                    </div>
+
+                    <hr class="amazon-hr">
+
+                    <!-- Price Block -->
+                    <div class="mb-4">
+                        <div class="text-sm text-gray-500 mb-1">Base Price per unit:</div>
+                        <div class="flex items-end gap-2 mb-1">
+                            <div class="flex items-baseline text-gray-900">
+                                <span class="text-sm align-top relative top-1">₹</span>
+                                <span class="text-[32px] font-medium leading-none" th:text="${product != null ? product.price : '399'}">399</span>
+                                <span class="text-sm align-top relative top-1">00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm font-bold text-gray-900 mb-1">Inclusive of GST</p>
+
+                    <hr class="amazon-hr">
+
+                    <!-- About this item -->
+                    <div class="mb-6">
+                        <h3 class="font-bold text-base text-gray-900 mb-2">About this product</h3>
+                        <div class="text-sm text-gray-800 leading-relaxed space-y-2">
+                            <p th:if="${product != null}" th:text="${product.description}">High quality printing from Alisam Cart.</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1">
+                                <li>Fully customizable in 3D</li>
+                                <li>Real-time preview of your designs</li>
+                                <li>Available in multiple finishes (Glossy, Matte)</li>
+                                <li>Bulk pricing available automatically</li>
+                                <li>Ships directly from Singanallur facility</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="amazon-hr">
+
+                    <!-- Customer Reviews Section -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-bold text-lg text-gray-900">Customer Reviews</h3>
+                            <button onclick="document.getElementById('reviewFormWrapper').classList.toggle('hidden')" class="text-sm bg-[#ffa41c] hover:bg-[#f09a1a] px-4 py-1.5 rounded-full font-bold shadow-sm transition-colors text-gray-900 border border-[#e3921b]">
+                                Write a Review
+                            </button>
+                        </div>
+                        
+                        <!-- Review Form -->
+                        <div id="reviewFormWrapper" class="hidden bg-gray-50 border border-gray-200 rounded-lg p-5 mb-6 shadow-inner">
+                            <div class="flex gap-2 mb-3 bg-purple-50 text-purple-800 p-2.5 rounded text-sm font-bold border border-purple-100">
+                                <i class="fas fa-coins text-yellow-500 mt-1"></i> Add a photo with your review and instantly earn 3 Coins!
+                            </div>
+                            <form th:action="@{'/products/' + ${product.id} + '/review'}" method="post" enctype="multipart/form-data" class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-1">Rating</label>
+                                    <div class="flex gap-2">
+                                        <input type="number" name="rating" min="1" max="5" value="5" class="w-16 border border-gray-300 rounded p-1.5 focus:ring-2 focus:ring-[#ffa41c] outline-none text-center" required>
+                                        <span class="text-xs text-gray-500 mt-2">1 to 5</span>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-1">Your Review</label>
+                                    <textarea name="reviewText" rows="3" placeholder="Tell others what you think about this product..." class="w-full border border-gray-300 rounded p-2 focus:ring-2 focus:ring-[#ffa41c] outline-none text-sm"></textarea>
+                                </div>
+                                
+                                <div class="p-3 border border-dashed border-purple-300 bg-white rounded-lg cursor-pointer hover:bg-purple-50 transition-colors relative" onclick="document.getElementById('reviewPhoto').click()">
+                                    <div class="flex flex-col items-center">
+                                        <i class="fas fa-camera text-purple-400 text-xl mb-1"></i>
+                                        <span class="text-xs font-bold text-purple-700">Add Photo (Required for 3 Coins)</span>
+                                    </div>
+                                    <input type="file" name="photo" id="reviewPhoto" accept="image/*" class="hidden" onchange="document.getElementById('photoName').textContent = this.files[0]?.name || ''">
+                                    <div id="photoName" class="text-[10px] text-center text-gray-500 font-mono mt-1 w-full truncate px-2"></div>
+                                </div>
+                                
+                                <button type="submit" class="w-full bg-[#007185] hover:bg-[#005e6f] text-white font-bold py-2 rounded shadow transition-colors text-sm">Submit Review</button>
+                            </form>
+                        </div>
+
+                        <!-- Existing Reviews List -->
+                        <div class="space-y-6 mt-4">
+                            <div th:if="${reviews == null or reviews.isEmpty()}" class="text-sm text-gray-500 italic py-4">
+                                No reviews yet. Be the first to add a review!
+                            </div>
+                            
+                            <div th:each="review : ${reviews}" class="border-b border-gray-100 pb-5">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
+                                        <img th:src="${review.user.profilePhotoUrl != null ? review.user.profilePhotoUrl : 'https://ui-avatars.com/api/?name=User'}" alt="User Avatar">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-gray-900" th:text="${review.user.name}">John Doe</span>
+                                        <div class="text-[10px] font-bold text-amber-500">
+                                            <span th:text="${review.rating}">5</span> <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <span class="text-[10px] text-gray-400 ml-auto" th:text="${#temporals.format(review.createdAt, 'dd MMM yyyy')}">Date</span>
+                                </div>
+                                
+                                <p class="text-sm text-gray-800 leading-relaxed max-w-2xl" th:text="${review.reviewText}">Great product!</p>
+                                
+                                <div th:if="${review.photoUrl != null and !review.photoUrl.isEmpty()}" class="mt-3">
+                                    <img th:src="${review.photoUrl}" alt="Customer photo" class="h-24 w-auto object-cover rounded shadow-sm border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================== COLUMN 3: BUY BOX & CUSTOMIZATION PANEL ================== -->
+                <div class="w-full lg:w-[25%]">
+                    
+                    <form action="/cart/add" method="post" class="border border-gray-300 rounded-lg p-5 bg-white shadow-sm sticky top-24">
+                        <input type="hidden" name="productId" th:value="${product != null ? product.id : 1}" />
+                        
+                        <div class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4">
+                            Customize Your Order
+                        </div>
+
+                        <!-- 1. Size Selection -->
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold text-gray-900 mb-1">Size</label>
+                            <select name="size" class="w-full border border-gray-300 rounded p-2 text-sm focus:ring-primary focus:border-primary bg-gray-50 outline-none">
+                                <option value="Standard">Standard</option>
+                                <option value="Large">Large</option>
+                                <option value="A4">A4 Size</option>
+                                <option value="A3">A3 Size</option>
+                            </select>
+                        </div>
+
+                        <!-- 2. Paper / Material Type -->
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold text-gray-900 mb-1">Material / Finish</label>
+                            <select name="paper" class="w-full border border-gray-300 rounded p-2 text-sm focus:ring-primary focus:border-primary bg-gray-50 outline-none">
+                                <option value="Glossy">Glossy Finish</option>
+                                <option value="Matte">Matte Finish</option>
+                                <option value="Cardstock">Premium Cardstock</option>
+                            </select>
+                        </div>
+
+                        <!-- 3. Custom Text -->
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold text-gray-900 mb-1">Custom Text (Name/Logo)</label>
+                            <div class="flex gap-2">
+                                <input type="text" name="text" id="customTextInput" placeholder="E.g., Alisam Cart" class="flex-1 w-full border border-gray-300 rounded p-2 text-sm focus:ring-primary focus:border-primary outline-none">
+                                <div class="relative" title="Select Text Color">
+                                    <input type="color" name="textColor" value="#000000" class="w-10 h-[38px] rounded border border-gray-300 cursor-pointer p-0.5 bg-white">
+                                </div>
+                            </div>
+                            <div class="text-[10px] text-gray-500 mt-1">Pick a color for your engraving/print text.</div>
+                        </div>
+
+                        <!-- 4. Live 3D Texture Upload -->
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold text-gray-900 mb-1">Upload Design / Photo</label>
+                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-3 text-center bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer relative overflow-hidden group">
+                                <i class="fas fa-cloud-upload-alt text-primary text-xl mb-1 group-hover:scale-110 transition-transform"></i>
+                                <div class="text-xs font-bold text-gray-600">Click to upload image</div>
+                                <div class="text-[10px] text-gray-400 mt-0.5 font-medium">Preview live on the 3D model!</div>
+                                <input type="file" id="textureUpload" accept="image/png, image/jpeg" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                            </div>
+                        </div>
+
+                        <!-- 5. Premium Color Selection -->
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold text-gray-900 mb-2">Product Base Color</label>
+                            <div class="flex flex-wrap gap-2 items-center">
+                                <!-- Preset Swatches -->
+                                <div class="color-swatch w-8 h-8 rounded-full cursor-pointer border-2 border-transparent hover:scale-110 transition-transform shadow-sm" style="background-color: #ffffff; border-color: #007185;" data-color="#ffffff" title="Classic White"></div>
+                                <div class="color-swatch w-8 h-8 rounded-full cursor-pointer border-2 border-transparent hover:scale-110 transition-transform shadow-sm" style="background-color: #212121;" data-color="#212121" title="Matte Black"></div>
+                                <div class="color-swatch w-8 h-8 rounded-full cursor-pointer border-2 border-transparent hover:scale-110 transition-transform shadow-sm" style="background-color: #ef4444;" data-color="#ef4444" title="Ruby Red"></div>
+                                <div class="color-swatch w-8 h-8 rounded-full cursor-pointer border-2 border-transparent hover:scale-110 transition-transform shadow-sm" style="background-color: #3b82f6;" data-color="#3b82f6" title="Royal Blue"></div>
+                                <div class="color-swatch w-8 h-8 rounded-full cursor-pointer border-2 border-transparent hover:scale-110 transition-transform shadow-sm" style="background-color: #22c55e;" data-color="#22c55e" title="Forest Green"></div>
+                                <div class="color-swatch w-8 h-8 rounded-full cursor-pointer border-2 border-transparent hover:scale-110 transition-transform shadow-sm" style="background-color: #f59e0b;" data-color="#f59e0b" title="Amber Yellow"></div>
+                                
+                                <div class="h-6 border-r border-gray-300 mx-1"></div>
+                                
+                                <!-- Custom Color Picker -->
+                                <div class="relative group" title="Custom Base Color">
+                                    <div class="w-8 h-8 rounded-full cursor-pointer border-2 border-dashed border-gray-400 flex items-center justify-center hover:border-primary transition-colors overflow-hidden relative">
+                                        <div class="absolute inset-0 bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 opacity-80"></div>
+                                        <i class="fas fa-palette text-white text-xs z-10"></i>
+                                        <input type="color" id="productColorPicker" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20">
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="color" id="selectedColorInput" value="#ffffff">
+                            <div class="text-xs text-gray-500 mt-2 font-medium">Selected Base: <span id="colorNameDisplay" class="font-bold text-gray-800">Classic White</span></div>
+                        </div>
+
+                        <!-- 6. Quantity Stepper -->
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold text-gray-900 mb-1">Quantity</label>
+                            <input type="number" name="quantity" id="quantityInput" value="1" min="1" max="10000" class="w-full border border-gray-300 rounded p-2 text-sm focus:ring-primary focus:border-primary text-center font-bold outline-none">
+                        </div>
+
+                        <hr class="amazon-hr">
+
+                        <!-- LIVE PRICE CALCULATOR -->
+                        <div class="bg-gray-50 p-3 rounded border border-gray-200 mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Total Estimated Price:</div>
+                            <div class="flex items-baseline text-green-700">
+                                <span class="text-sm font-bold align-top relative top-1">₹</span>
+                                <span id="livePriceDisplay" class="text-2xl font-bold leading-none" th:text="${product != null ? product.price : '399'}">399</span>
+                                <span class="text-sm font-bold align-top relative top-1">.00</span>
+                            </div>
+                            <!-- Hidden inputs for calculation -->
+                            <input type="hidden" id="basePrice" th:value="${product != null ? product.price : '399'}">
+                            <input type="hidden" name="customImageUrl" id="customImageUrlInput" value="">
+                        </div>
+
+                        <div class="text-sm font-medium text-green-700 mb-4">
+                            In stock. Ships from Coimbatore.
+                        </div>
+
+                        <!-- Add to Cart -->
+                        <button type="submit" class="w-full bg-primary hover:bg-primaryHover text-white text-sm font-bold py-3.5 rounded-full shadow-md hover:shadow-lg transform active:scale-95 transition-all cursor-pointer flex justify-center items-center gap-2">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        
+                        <div class="text-xs text-gray-500 flex justify-center items-center gap-2 mt-2">
+                            <i class="fas fa-lock text-gray-400"></i> Secure transaction
+                        </div>
+                        
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const qtyInput = document.getElementById('quantityInput');
+                const basePriceInput = document.getElementById('basePrice');
+                const livePriceDisplay = document.getElementById('livePriceDisplay');
+                const colorPicker = document.getElementById('productColorPicker');
+                const modelViewer = document.getElementById('product-3d-model');
+
+                // Live Price Calculator
+                function calculatePrice() {
+                    const qty = parseInt(qtyInput.value) || 1;
+                    const basePrice = parseFloat(basePriceInput.value) || 0;
+                    const total = qty * basePrice;
+                    livePriceDisplay.textContent = total.toFixed(2).replace(/\.00$/, '');
+                }
+
+                qtyInput.addEventListener('input', calculatePrice);
+                qtyInput.addEventListener('change', calculatePrice);
+
+                // 3D Model Color Update Logic
+                const swatches = document.querySelectorAll('.color-swatch');
+                const selectedColorInput = document.getElementById('selectedColorInput');
+                const colorNameDisplay = document.getElementById('colorNameDisplay');
+
+                function applyColorToModel(colorHex) {
+                    if (modelViewer.model && modelViewer.model.materials && modelViewer.model.materials.length > 0) {
+                        try {
+                            const material = modelViewer.model.materials[0];
+                            material.pbrMetallicRoughness.setBaseColorFactor(colorHex);
+                        } catch (e) {
+                            console.warn("Could not apply color to model material:", e);
+                        }
+                    }
+                }
+
+                // Handle Swatch Clicks
+                swatches.forEach(swatch => {
+                    swatch.addEventListener('click', (e) => {
+                        swatches.forEach(s => s.style.borderColor = 'transparent');
+                        const target = e.target;
+                        target.style.borderColor = '#007185';
+                        
+                        const colorHex = target.getAttribute('data-color');
+                        const colorName = target.getAttribute('title');
+                        
+                        selectedColorInput.value = colorHex;
+                        colorNameDisplay.textContent = colorName;
+                        applyColorToModel(colorHex);
+                    });
+                });
+
+                // Handle Custom Color Picker
+                if(colorPicker) {
+                    colorPicker.addEventListener('input', (event) => {
+                        swatches.forEach(s => s.style.borderColor = 'transparent');
+                        const colorHex = event.target.value;
+                        selectedColorInput.value = colorHex;
+                        colorNameDisplay.textContent = "Custom (" + colorHex + ")";
+                        applyColorToModel(colorHex);
+                    });
+                }
+
+                // Live 3D Texture Upload Update
+                const textureUpload = document.getElementById('textureUpload');
+                const customImageUrlInput = document.getElementById('customImageUrlInput');
+                if(textureUpload) {
+                    textureUpload.addEventListener('change', async (event) => {
+                        const file = event.target.files[0];
+                        if (!file) return;
+
+                        // Create a local blob URL for the 3D viewer speed
+                        const url = URL.createObjectURL(file);
+                        
+                        // Also read as Base64 to save to Cart
+                        const reader = new FileReader();
+                        reader.onload = (e) => {
+                            customImageUrlInput.value = e.target.result;
+                        };
+                        reader.readAsDataURL(file);
+                        
+                        // Apply the texture to the first material
+                        if (modelViewer.model && modelViewer.model.materials) {
+                            try {
+                                const material = modelViewer.model.materials[0];
+                                const texture = await modelViewer.createTexture(url);
+                                material.pbrMetallicRoughness.baseColorTexture.setTexture(texture);
+                            } catch (e) {
+                                console.warn("Could not apply texture to model object:", e);
+                            }
+                        }
+                    });
+                }
+            });
+        </script>
+    </main>
+</body>
+</html>
